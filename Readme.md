@@ -11,9 +11,12 @@ Linkedin : https://www.linkedin.com/in/emad-eldin-adel/
 Phone&WhatsApp : +201067456996
 
 
+![alt text](Screenshots/image.png)
+This README file contains the full solutions for both tasks With all required **Screenshots For Both Scenarios**
 
-This README file contains the full solutions for both tasks:
- **Q1: Custom Command (mygrep.sh)** and **Q2: Web Dashboard Troubleshooting Scenario**.
+:
+ **Q1: Custom Command (mygrep.sh)** and 
+ **Q2: Web Dashboard Troubleshooting Scenario**.
  It includes all required steps, commands, bonus tasks, reflections, and embedded screenshots for validation.
 
 ---
@@ -55,7 +58,9 @@ This project implements a Bash script called `mygrep.sh`, which mimics the core 
 ```bash
 chmod +x mygrep.sh
 ```
-![alt text](Screenshots/1.png)### Run the script:
+![alt text](Screenshots/1.png)
+
+### Run the script:
 
 ```bash
 ./mygrep.sh [options] pattern file
