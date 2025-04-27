@@ -55,8 +55,7 @@ This project implements a Bash script called `mygrep.sh`, which mimics the core 
 ```bash
 chmod +x mygrep.sh
 ```
-
-![image-20250427194745214](/home/emadeldin/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20250427194745214.png)
+![alt text](image.png)
 
 ### Run the script:
 
@@ -72,40 +71,36 @@ chmod +x mygrep.sh
    ./mygrep.sh hello testfile.txt
    ```
 
-   ![image-20250427194836392](/home/emadeldin/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20250427194836392.png)
+![alt text](image-4.png)
 
-2. **Search with Line Numbers**:
+**Search with Line Numbers**:
 
    ```bash
    ./mygrep.sh -n hello testfile.txt
    ```
 
-   ![image-20250427194907224](/home/emadeldin/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20250427194907224.png)
-
+![alt text](image-5.png)
 3. **Inverted Match**:
 
    ```bash
    ./mygrep.sh -vn hello testfile.txt
    ```
 
-   ![image-20250427194936870](/home/emadeldin/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20250427194936870.png)
-
+![alt text](image-6.png)
 4. **Error (Missing Search String)**:
 
    ```bash
    ./mygrep.sh -v testfile.txt
    ```
 
-   ![image-20250427195007249](/home/emadeldin/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20250427195007249.png)
-
+![alt text](image-7.png)
 5. **Help Command** (Displays usage instructions):
 
    ```bash
    ./mygrep.sh --help  		#   Bonus Feature
    ```
 
-![image-20250427195036155](/home/emadeldin/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20250427195036155.png)
-
+![alt text](image-8.png)
 ---
 
 # Q2 : Scenario
@@ -133,16 +128,14 @@ First, we compared DNS resolution using `/etc/resolv.conf` and Google's public D
 dig internal.example.com
 ```
 
-<img src="/home/emadeldin/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20250427200833895.png" alt="image-20250427200833895" style="zoom:45%;" />
-
+![alt text](image-9.png)
 - Using Google's DNS:
 
 ```bash
 dig google.com
 ```
 
-<img src="/home/emadeldin/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20250427201047157.png" alt="image-20250427201047157" style="zoom:50%;" />
-
+![alt text](image-10.png)
 ------
 
 ### 2. Diagnose Service Reachability
@@ -156,8 +149,7 @@ telnet 192.168.229.132 80
 telnet 192.168.229.132 443
 ```
 
-<img src="/home/emadeldin/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20250427201328838.png" alt="image-20250427201328838" style="zoom:50%;" />
-
+![alt text](image-11.png)
 ------
 
 ### 3. Trace the Issue – Potential Causes
@@ -246,8 +238,7 @@ Add:
 192.168.229.132 server.iiss.com
 ```
 
-![image-20250427201809769](/home/emadeldin/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20250427201809769.png)
-
+![alt text](image-12.png)
 Now the system resolves `internal.example.com` locally.
 
 ------
@@ -264,4 +255,4 @@ sudo nmcli connection down "System ens160"
 sudo nmcli connection up "System ens160"
 ```
 
-![image-20250427201851476](/home/emadeldin/.var/app/io.typora.Typora/config/Typora/typora-user-images/image-20250427201851476.png)
+![alt text](image-13.png)
