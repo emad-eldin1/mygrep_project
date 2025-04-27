@@ -55,9 +55,7 @@ This project implements a Bash script called `mygrep.sh`, which mimics the core 
 ```bash
 chmod +x mygrep.sh
 ```
-![alt text](image.png)
-
-### Run the script:
+![alt text](Screenshots/1.png)### Run the script:
 
 ```bash
 ./mygrep.sh [options] pattern file
@@ -71,7 +69,7 @@ chmod +x mygrep.sh
    ./mygrep.sh hello testfile.txt
    ```
 
-![alt text](image-4.png)
+![alt text](Screenshots/2.png)
 
 **Search with Line Numbers**:
 
@@ -79,30 +77,31 @@ chmod +x mygrep.sh
    ./mygrep.sh -n hello testfile.txt
    ```
 
-![alt text](image-5.png)
-3. **Inverted Match**:
+![alt text](Screenshots/3.png)
+3.
+ **Inverted Match**:
 
    ```bash
    ./mygrep.sh -vn hello testfile.txt
    ```
 
-![alt text](image-6.png)
-4. **Error (Missing Search String)**:
+![alt text](Screenshots/4.png)
+4. 
+**Error (Missing Search String)**:
 
    ```bash
    ./mygrep.sh -v testfile.txt
    ```
 
-![alt text](image-7.png)
-5. **Help Command** (Displays usage instructions):
+![alt text](Screenshots/5.png)
+5. 
+**Help Command** (Displays usage instructions):
 
    ```bash
    ./mygrep.sh --help  		#   Bonus Feature
    ```
 
-![alt text](image-8.png)
----
-
+![alt text](Screenshots/6.png)
 # Q2 : Scenario
 
 ## Troubleshooting DNS and Network Connectivity Issue 
@@ -128,16 +127,14 @@ First, we compared DNS resolution using `/etc/resolv.conf` and Google's public D
 dig internal.example.com
 ```
 
-![alt text](image-9.png)
+![alt text](Screenshots/7.png)
 - Using Google's DNS:
 
 ```bash
 dig google.com
 ```
 
-![alt text](image-10.png)
-------
-
+![alt text](Screenshots/8.png)
 ### 2. Diagnose Service Reachability
 
 We verified if the web service was reachable on **port 80 (HTTP)** or **443 (HTTPS)**.
@@ -149,9 +146,7 @@ telnet 192.168.229.132 80
 telnet 192.168.229.132 443
 ```
 
-![alt text](image-11.png)
-------
-
+![alt text](Screenshots/9.png)
 ### 3. Trace the Issue – Potential Causes
 
 **Possible reasons why `internal.example.com` was unreachable:**
@@ -238,8 +233,7 @@ Add:
 192.168.229.132 server.iiss.com
 ```
 
-![alt text](image-12.png)
-Now the system resolves `internal.example.com` locally.
+![alt text](Screenshots/10.png)Now the system resolves `internal.example.com` locally.
 
 ------
 
@@ -255,4 +249,4 @@ sudo nmcli connection down "System ens160"
 sudo nmcli connection up "System ens160"
 ```
 
-![alt text](image-13.png)
+![alt text](Screenshots/11.png)
