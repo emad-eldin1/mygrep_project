@@ -255,3 +255,27 @@ sudo nmcli connection up "System ens160"
 ```
 
 ![alt text](Screenshots/11.png)
+
+![alt text](Screenshots/DNS_SHOW.png)
+
+---
+## Screenshots For Local DNS Configuration 
+
+```
+vim /etc/named.conf
+```
+![alt text](Screenshots/named_conf.png)
+![alt text](Screenshots/Named_zones.png)
+
+```
+vim /var/named/forward.iiss.zone
+```
+![alt text](Screenshots/Forward_Resolution.png)
+
+```
+vim /var/named/reverse.iiss.zone
+```
+![alt text](Screenshots/reverse_Resol.png)
+---
+
+# Thank You 
